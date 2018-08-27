@@ -1,0 +1,68 @@
+/*** --- Small Browser Window (width < 960px) --- ***/
+@media only screen and (max-width: 960px) {
+	/*** Header Styles ***/
+	header {
+		text-align: center;
+	}
+	
+	header img {
+		float: initial;
+	}
+	
+	header h1, nav, article {
+		width: 100%;
+	}
+	
+	header h1 {
+		padding: 0;
+	}
+	
+	
+	
+	/*** Nav Styles ***/
+	nav {
+		padding: 10px 0;
+	}
+	
+	nav a {
+		font-size: 1em;
+	}
+	
+	
+	
+	/*** Main Section Styles (Music) ***/
+	.performer {
+		min-width: 80%;
+	}
+	
+	
+	
+	/*** Main Section Styles (Jobs) ***/
+	.jobs-a {
+		border-top: solid black 0;
+	}
+	
+	
+	
+	/*** Main Section Styles (Cart) ***/
+	.cart-t tbody tr th, .cart-t tbody tr td {
+		padding: 0.5em;
+	}
+	
+	
+	
+	/*** Main Section Styles (Order) ***/
+	.double {
+		display: block;
+	}
+	
+	.double div:nth-child(2) {
+		margin-top: 1em;
+	}
+	
+	.double div:nth-child(2) span {
+		margin-left: 0;
+		width: 125px;
+		display: inline-block;
+	}
+}

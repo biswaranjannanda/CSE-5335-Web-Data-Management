@@ -1,0 +1,50 @@
+/*** --- Mobile Settings (And devices with width < 512px) --- ***/
+@media only screen and (max-device-width: 512px) {
+	/*** Header Styles ***/
+	header {
+		text-align: center;
+	}
+	
+	header img {
+		float: initial;
+	}
+	
+	header h1 {
+		width: 100%;
+		padding: 0;
+	}
+	
+	
+	
+	/*** Nav Styles ***/
+	nav a {
+		font-size: 3em;
+		display: block;
+		padding: 0;
+	}
+	
+	
+	
+	/*** Main Section Styles (Common) ***/
+	table {
+		font-size: 1.5em;
+	}
+	
+	figcaption {
+		font-size: 1.75em;
+	}
+	
+	
+	
+	/*** Main Section Styles (Music) ***/
+	.performer {
+		align-items: center;
+	}
+	
+	
+	
+	/*** Footer Section ***/
+	footer {
+		font-size: 0.8em;
+	}
+}

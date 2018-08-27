@@ -1,0 +1,75 @@
+/*** --- Tablet Settings (And devices with width < 1024px) --- ***/
+@media only screen and (max-device-width: 1024px) {
+	/*** Nav Styles ***/
+	nav, article {
+		width: 100%;
+	}
+	
+	nav {
+		padding: 10px 0;
+	}
+	
+	nav a {
+		font-size: 1.5em;
+		display: inline;
+		padding: 0 0.5em;
+	}
+	
+	
+	
+	/*** Main Section Styles (Common) ***/
+	article {
+		font-size: 1.5em;
+	}
+	
+	table {
+		font-size: 1em;
+	}
+	
+	input, textarea {
+		font-size: 1em;
+		max-width: 90%;
+	}
+	
+	
+	
+	/*** Main Section Styles (Jobs) ***/
+	.jobs-a {
+		border-top: solid black 0;
+	}
+	
+	
+	
+	/*** Main Section Styles (Cart) ***/
+	.cart-t tbody tr th {
+		padding: 0.5em;
+	}
+	
+	.cart-t tbody tr td {
+		padding: 0.5em;
+	}
+	
+	
+	
+	/*** Main Section Styles (Order) ***/
+	.double {
+		display: block;
+	}
+	
+	.double div:nth-child(2) {
+		margin-top: 1em;
+	}
+	
+	.double div:nth-child(2) span {
+		margin-left: 0;
+		width: 125px;
+		display: inline-block;
+	}
+	
+	
+	
+	/*** Footer Section ***/
+	footer {
+		font-size: initial;
+	}
+}

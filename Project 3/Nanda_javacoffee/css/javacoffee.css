@@ -1,0 +1,180 @@
+/* Create two unequal columns that floats next to each other */
+.column {
+	float: left;
+}
+.left {
+	width: 15%;
+	flex: 15%;
+	background-color:#221811;
+}
+.right {
+	width: 85%;
+	flex: 85%;
+	background-color:#FFEFCB;
+}
+.resize1 {
+	max-width:100%;
+	height:auto;
+}
+
+figure.fig1 {
+	margin:0;
+	max-width:100%;
+	background-color:#221811;
+	padding:5px;	
+	top: 10px;
+	left:150px; 
+}
+.resize2 {
+	width: 100%;
+	max-height: 200px;
+
+}
+
+.row {
+	display: -webkit-flex;
+	display: flex;
+	display: -ms-flex;
+}
+.tabledata {
+	text-align: center;
+	padding-left:10px;
+	padding-top:10px;
+	padding-bottom: 10px;
+	font-weight:bold;
+}
+.tabledatapad {
+	padding-left: 20px;
+	padding: 10px;
+}
+.buttondiv {
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+address {
+	font-style:normal;
+}
+body {
+	margin:auto;
+	width: 80%;
+	margin-top: 10px;
+	color:#221811;
+	font-family: "Verdana",Arial,sans-serif;
+	background-color:#FCEBB6;
+	box-shadow: 3px 3px #808080;
+	-webkit-box-shadow: 3px 3px #808080;
+	-webkit-appearance: none;
+	
+}
+h1 {
+	background-color: #D2B48C;
+	line-height: 260%;
+	padding-left: 10px;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+h2 {
+	color:#221811;
+	padding-left: 30px;
+}
+.navclass a {
+	text-decoration: none;
+	color: #FCEBB6;
+	font-size: 100%;
+}
+.spacing {
+	margin-left:30px;
+}
+.divend {
+	background-color:#D2B48C;
+	border-top:2px solid black;
+	font-size: .70em;
+	font-style:italic;
+	text-align: center;
+	height: 100%;
+	padding:5px;
+}
+.artdiv {
+	margin-left: 20px;
+}
+.tableclass {
+	margin-bottom: 50px;
+	width:90%;
+	border-spacing: 0px;
+
+}
+.musicdiv {
+	background-color:#D2B48C;
+	border-bottom: 2px solid black;
+	font-size: .70em;
+	font-weight:bold;
+	padding-left: 50px;
+	height: 100%;
+	margin-left: -50px;
+
+}
+.musicimg {
+	position: relative;
+	margin-top: 10px;
+	margin-left: 150px;
+}
+
+.divbackground {
+	border-bottom: 1em solid #221811;
+}
+.div {
+	margin-bottom: 15px;
+	padding-left: 30px;
+}
+.jobform {
+	text-align: right;
+}
+.jobform1 {
+	margin-bottom: 10px;
+}
+.font {
+	font-size: .8em;
+	padding-left: 10px;
+}
+.scrollabletextbox {
+	overflow:scroll;
+}
+@media only screen and (max-width: 580px) {
+	body {
+		width: 100%;
+	}
+	nav {
+		font-size: 1.5em;
+		max-width: 100%;
+	}
+}
+@media only screen and (max-width: 420px) {
+	body {
+		width: 100%;
+	}
+	nav {
+		font-size: 1.2em;
+		max-width: 100%;
+	}
+	.div {
+		margin-bottom: 15px;
+		padding-left: 1px;
+	}
+	.font {
+		font-size: .8em;
+		padding-left: 1px;
+	}
+	h1 {
+		line-height: 205%;
+		font-size: 1.5em;
+	}
+	.musicimg {
+		position: relative;
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+	.musicdiv {
+		margin-left: -20px;
+	}

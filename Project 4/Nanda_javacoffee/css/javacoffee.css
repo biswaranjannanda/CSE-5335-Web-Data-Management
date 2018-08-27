@@ -1,0 +1,269 @@
+/*** --- Default Settings (For devices with width > 1024px) --- ***/
+body {
+	color: #221811;
+	background-image: url("../images/background.gif");
+	font-family: Verdana, Arial, sans-serif;
+}
+
+h1, h2, h3, p, ul, address {
+	padding-left: 3em;
+	padding-right: 3em;
+}
+
+#wrapper {
+	width: 80%;
+	margin: 0 auto;
+}
+
+
+
+/*** Header Styles ***/
+header {
+	background-color: #D2B48C;
+	overflow: hidden;
+	line-height: 150px;
+	box-shadow: 2px 2px 2px #777777;
+	margin-top: 1em;
+}
+
+header img {
+	float: left;
+}
+
+header h1 {
+	overflow: hidden;
+	margin: 0;
+	padding: 0 20px;
+}
+
+
+
+/*** Nav Styles ***/
+nav {
+	float: left;
+	width: 200px;
+	padding: 20px 0;
+	text-align: center;
+	font-weight: bold;
+}
+
+nav a {
+	display: block;
+	margin: 5px 0;
+	text-decoration: none;
+	color: #FCEBB6;
+	font-size: 1.25em;
+}
+
+nav a:visited {
+	color: #d2b48c;
+}
+
+nav a:hover,
+nav a:active {
+	color: #cc9933;
+}
+
+
+
+/*** Main Section Styles (Common) ***/
+article {
+	overflow: hidden;
+	background-color: #fef6c2;
+	padding-bottom: 0.5em;
+}
+
+section {
+	padding: 0 2em;
+}
+
+section h1 {
+	margin: 0.5em 0;
+}
+
+address {
+	font-style: normal;
+}
+
+td, th {
+	padding: 0.5em;
+}
+
+figure {
+	display: flex;
+	margin: 0 auto;
+}
+
+figcaption {
+	padding: 0 1em;
+	text-align: left;
+}
+
+.main {
+	background-color: #221811;
+	box-shadow: 2px 2px 2px #777777;
+	border-bottom: 2px solid black;
+}
+
+.last {
+	margin-bottom: 1em;
+}
+
+.stripes {
+	background-color: #d2b48c;
+	border-collapse: collapse;
+}
+
+.stripes tbody tr:nth-of-type(even) {
+	background-color: #ffffcc;
+}
+
+.pull-right {
+	text-align: right;
+}
+
+
+
+/*** Main Section Styles (Home) ***/
+.tel-num {
+	text-decoration: none;
+	color: black;
+}
+
+
+
+/*** Main Section Styles (Menu) ***/
+.menu-t {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+/*** Main Section Styles (Music) ***/
+.music-h {
+	background-color: #D2B48C;
+	border-bottom: 2px solid black;
+	clear: both;
+}
+
+.performer {
+	width: 60%;
+	min-width: 600px;
+}
+
+
+
+/*** Main Section Styles (Jobs) ***/
+.jobs-a {
+	border-top: solid black 20px;
+}
+
+
+/*** Main Section Styles (Gear) ***/
+.add-to-cart {
+	margin-top: 2em;
+}
+
+
+
+/*** Main Section Styles (Cart) ***/
+.cart-a {
+	padding-top: 1em;
+	min-height: 250px;
+}
+
+.cart-a h3 {
+	text-align: center;
+}
+
+.cart-a div form {
+	text-align: center;
+}
+
+.cart-t {
+	width: auto;
+	margin: 0 auto;
+}
+
+.cart-t tbody tr th {
+	padding: 1em 3em;
+}
+
+.cart-t tbody tr td {
+	padding: 1em;
+}
+
+.cart-is-empty, .cart-options {
+	text-align: center;
+}
+
+.cart-options {
+	margin-top: 1em;
+}
+
+.cart-options form {
+	display: inline;
+}
+
+
+
+/*** Main Section Styles (Order) ***/
+.order-f {
+	display: inline-block;
+	margin-top: 2em;
+}
+
+.order-f legend {
+	margin: 0 auto;
+	font-weight: bold;
+}
+
+.order-f input[type="submit"] {
+	margin: 1em 0;
+}
+
+.single, .double {
+	margin: 1em;
+	text-align: left;
+}
+
+.single input, .double input, .single select, .double select {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	width: 170px;
+}
+
+.single span, .double div:nth-child(1) span {
+	width: 125px;
+	display: inline-block;
+}
+
+.double {
+	display: flex;
+}
+
+.double div:nth-child(2) span {
+	margin-left: 20px;
+	width: 45px;
+	display: inline-block;
+}
+
+.single select, .double select {
+	vertical-align: top;
+	padding: 1px 0;
+}
+
+
+
+/*** Footer Section ***/
+footer {
+	background-color: #D2B48C;
+	font-size: 0.6em;
+	text-align: center;
+	padding: 0.5em 0;
+	box-shadow: 2px 2px 2px #777777;
+	margin-bottom: 1em;
+}
