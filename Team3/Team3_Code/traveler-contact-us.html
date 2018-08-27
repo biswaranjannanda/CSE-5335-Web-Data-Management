@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>US Travelers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script type="text/javascript" src="scripts/scripts.js">
+    </script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header id="headingBorder">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <img src="images/logo.png" align="left">
+                    </div>
+                    <div class="col-md-6">
+                        <h1>USA Travelers</h1>
+                    </div>
+                    <div class=" col-md-4 topright">
+                        <a class="headerright" href="#" onClick="on('overlay'); return false;">My Proflie</a>
+                        <a class="headerright" href="#">Logout</a>
+                    </div>
+                </div>
+        </header>
+        <nav class="active ">
+            <ul>
+                <li class=" menu"><a href="traveler-home.html">Home</a></li>
+                <li class=" menu"><a href="traveler-travel-request.html">My Travel</a></li>
+                <li class=" menu"><a href="travel-details.html">Travel History</a></li>
+                <li class=" menuselected"><a href="traveler-contact-us.html">Contact Us</a></li>
+                <li class=" menu"><a href="poe.html">Port of Entry</a></li>
+            </ul>
+        </nav>
+        <!-- Overlay for My profile -->
+        <div id="overlay">
+            <div class="content myprofile">
+                <div id="contentHeader">
+                    <h2>My Profile</h2>
+                </div>
+                <form class="form-horizontal" id="myprofileform" action="registation.php" method="post">
+                    <div class="form-group">
+                        <div class="col-md-3 with-margin">
+                            <label>Username:</label>
+                            <input type="text" class="form-control" id="username" placeholder="Enter Username" name="username" readonly="true">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3 with-margin">
+                            <label>Password:</label>
+                            <input type="password" class="form-control" id="pwd1" placeholder="Enter Password" name="pwd1">
+                        </div>
+                        <div class="col-md-3 with-margin">
+                            <label>Renter Password:</label>
+                            <input type="password" class="form-control" id="pwd2" placeholder="Re-Enter Password" name="pwd2">
+                        </div>
+                        <div class="col-lg-3 with-margin">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3 with-margin">
+                            <label>First Name:</label>
+                            <input type="text" class="form-control" id="fn" placeholder="Enter First Name" name="fn">
+                        </div>
+                        <div class="col-md-2 with-margin">
+                            <label>Middle Name:</label>
+                            <input type="text" class="form-control" id="mn" placeholder="Enter Middle Name" name="mn">
+                        </div>
+                        <div class="col-md-3 with-margin">
+                            <label>Last Name:</label>
+                            <input type="text" class="form-control" id="ln" placeholder="Enter Last Name" name="ln">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-2 with-margin">
+                            <label>Date Of Birth:</label>
+                            <input type="date" class="form-control" id="username" name="dob">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3 with-margin">
+                            <label>Passport:</label>
+                            <input type="text" class="form-control" id="fn" placeholder="Enter Passport Number" name="passport">
+                        </div>
+                        <div class="col-md-2 with-margin">
+                            <label>Issuing Country:</label>
+                            <select class="custom-select mb-2 mr-sm-2 mb-sm-0 form-control" id="IssuingCountry" name="IssuingCountry">
+                                <option selected>Select Issuing Country</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2 with-margin">
+                            <label>Expiry Date:</label>
+                            <input type="date" class="form-control" id="pexp" name="pexp">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3 with-margin">
+                            <label>Address Line 1:</label>
+                            <input type="text" class="form-control" id="add1" placeholder="Enter Address Line 1" name="add1">
+                        </div>
+                        <div class="col-md-3 with-margin">
+                            <label>Address Line 2:</label>
+                            <input type="text" class="form-control" id="add2" placeholder="Enter Address Line 2" name="add2">
+                        </div>
+                        <div class="col-lg-3 with-margin">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-2 with-margin">
+                            <label>Country:</label>
+                            <select class="custom-select mb-2 mr-sm-2 mb-sm-0 form-control" id="country" name="country">
+                                <option selected>Select Country</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2 with-margin">
+                            <label>State:</label>
+                            <select class="custom-select mb-2 mr-sm-2 mb-sm-0 form-control" id="state" name="state">
+                                <option selected>Select State</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2 with-margin">
+                            <label>City:</label>
+                            <select class="custom-select mb-2 mr-sm-2 mb-sm-0 form-control" id="city" name="city">
+                                <option selected>Select City</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2 with-margin">
+                            <label>Zipcode:</label>
+                            <input type="text" class="form-control" id="zipcode" placeholder="Enter Zipcode" name="zipcode">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-2 with-margin">
+                            <label>Visa Category:</label>
+                            <select class="custom-select mb-2 mr-sm-2 mb-sm-0 form-control" id="visacat" name="visacat">
+                                <option selected>Select Visa Category</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2 with-margin">
+                            <label>Visa Number:</label>
+                            <input type="text" class="form-control" id="visa" placeholder="Enter Visa Number" name="visa">
+                        </div>
+                        <div class="col-md-2 with-margin">
+                            <label>Expiry Date:</label>
+                            <input type="date" class="form-control" id="pexp" name="visaexp">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-4 col-md-2 with-margin">
+                            <button type="submit" class="btn btn-primary">Save</button>
+                        </div>
+                        <div class="col-md-2 with-margin">
+                            <input type="button" class="btn btn-primary" onclick="off('overlay')" value="Cancel">
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="content">
+            <div id="contentHeader">
+                <h2>Contact USA Customs</h2>
+            </div>
+            <div id="contactdiv">
+                <div class="contactsection">
+                    <span class="contactheadings">Location Address:</span>
+                    <br>
+                    <span class="contactcontent">7501 Esters Blvd.,Suite 160 
+            Irving, TX 75063</span></div>
+                <div class="contactsection">
+                    <span class="contactheadings">Mailing Address:</span>
+                    <br>
+                    <span class="contactcontent">P.O. Box 619050
+            DFW Airport, TX 75261-9050</span></div>
+                <div class="contactsection">
+                    <span class="contactheadings">Operational Hours:</span>
+                    <br>
+                    <span class="contactcontent">8:30 AM-5:00 PM (CST) Weekdays (Monday-Friday)</span></div>
+                <div class="contactsection">
+                    <span class="contactheadings">Phone:</span>
+                    <br>
+                    <span class="contactcontent"><a href="tel:+9728707460">(972) 870-7460</a></span></div>
+                <div class="contactsection">
+                    <span class="contactheadings">Fax:</span>
+                    <br>
+                    <span class="contactcontent"><a href="fax:+9728707553">(972) 870-7553</a></span></div>
+                <div class="contactsection">
+                    <span class="contactheadings">Email:</span>
+                    <br>
+                    <span class="contactcontent"><a href="mailto:support@ustravelers.com">support@ustravelers.com</a></span></div>
+            </div>
+        </div>
+        <footer class="footer">Copyright &copy; 2018 USA Travelers
+        </footer>
+        </div>
+</body>
+
+</html>

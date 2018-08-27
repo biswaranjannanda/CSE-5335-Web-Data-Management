@@ -1,0 +1,301 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing:inherit;
+}
+#warning {
+    color:#FF0000;
+}
+#headingBorder {
+    border-radius: 25px;
+    border: 2px solid #4472C4;
+    padding-left: 10px;
+    padding-top: 5px;
+    height: 105px;
+    margin-top: 20px;
+}
+
+#headingBorder h1 {
+    padding-left: 35%;
+    font-size: 50px;
+    color: #4472C4;
+}
+
+.content {
+    background-color:white;
+    /*min-height: 900px;*/
+    height: auto !important;
+    max-height: 100%;
+    border-radius: 25px;
+    border: 2px solid #4472C4;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.footer {
+    border-radius: 15px;
+    border: 2px solid #4472C4;
+    text-align: center;
+    font-size: 10px;
+    font-style: italic;
+    padding: 20px;
+    margin-bottom: 20px;
+    height: 10%;
+}
+
+.with-margin {
+    margin-bottom: 10px;
+}
+
+#contentHeader {
+    padding-left:10px;
+    background-color: #4472C4;
+    color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: 2px solid #4472C4;
+    position: relative;
+}
+
+#registationform {
+    padding: 10px;
+}
+
+form {
+    padding-left: 10px;
+    padding-top: 10px;
+    background: white;
+    border-bottom-left-radius: 25px;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1500px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    #headingBorder h1 {
+        padding-left: 35%;
+        font-size: 25px;
+        color: #4472C4;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    #headingBorder h1 {
+        padding-left: 35%;
+        font-size: 30 px;
+        color: #4472C4;
+    }
+}
+
+#userprofileheader {
+    position: fixed;
+    right: 12%;
+    top: 5%;
+    font-size: 15px;
+    margin: 20px;
+}
+
+.active ul {
+    display:inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+.active li {
+    display:inline-block;
+    float: left;
+    background-color: #4472C4;
+    border-radius: 10px;
+    margin: 1px;
+    /*padding: 0 auto;*/
+    padding-left: 75px;
+    padding-right: 75px;
+    font-size: 20px;
+}
+
+.active li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.active li:hover {
+    display:inline-block;
+    background-color: #769ce0;
+    border-radius: 10px;
+    padding-left: 75px;
+    padding-right: 75px;
+    margin: 1px;
+    text-decoration: none;
+    color: white;
+}
+.menucustoms .menu a {
+    display:inline-block;
+    padding-left: 44px;
+    padding-right: 44px;
+
+}
+.menucustoms .menuselected a {
+    display:inline-block;
+    padding-left: 44px;
+    padding-right: 44px;
+
+}
+.active li a:hover {
+    display:inline-block;
+    text-decoration: none;
+    color: white;
+}
+
+.menuselected  li {
+    display:inline-block;
+    float: left;
+    border-radius: 10px;
+    margin: 1px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.menuselected  li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    /*padding: 12px 14px;*/
+    text-decoration: none;
+}
+
+.active {
+    margin-left: 10px;
+}
+.active .menuselected {
+        background-color: #bf0000;
+}
+.active .menuselected:hover {
+    background-color:#db3636;
+}
+#overlay,#overlay-details {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    cursor: pointer;
+       overflow-y: scroll;
+
+}
+#overlay-details  .contentcustoms   {
+    max-width: 900px;
+    min-height:800px;
+    max-height: 100%;
+    margin: 20px auto;
+    z-index: 4;
+}
+#overlay-details  .contenttravel   {
+    max-width: 900px;
+    max-height: 100%;
+    margin: 20px auto;
+    z-index: 4;
+}
+
+#text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.myprofile {
+    max-width: 900px;
+    max-height: 100%;
+    margin: 20px auto;
+    z-index: 4;
+}
+
+#placeofstay h5 {
+    padding: 10px;
+    color: #4472C4;
+    text-decoration: underline;
+}
+
+#travelhistorydiv {
+    width: 80%;
+    position: relative;
+    left: 10%;
+    padding-top: 2%;
+    border: 2px #4472C4;
+    border-style: solid;
+    border-radius: 15px;
+    padding: 2%;
+    margin-bottom: 10px;
+}
+
+#left {
+     min-height: 500px;
+    height: auto !important;
+    max-height: 100%;
+    border-radius: 25px;
+    border: 2px solid #4472C4;
+    height: 105px;
+    margin-top: 10px;
+    width: 20%;
+    float: left;
+        margin-bottom: 4px;
+}
+
+#right {
+    min-height: 500px;
+    height: auto !important;
+    max-height: 100%;
+    border-radius: 25px;
+    border: 2px solid #4472C4;
+    height: 105px;
+    margin-top: 10px;
+    width: 79%;
+    float: right;
+    margin-bottom: 4px;
+    margin-left: 1%;
+
+}
+
+.contentnoborder {
+    min-height: 500px;
+    height: auto !important;
+    max-height: 100%;
+    margin-bottom: 20px;
+    
+}
+
+#quicksummarytable {
+border-spacing: 10px;
+
+}
+#quicksummarytable tr,th{
+padding: 40px;
+font-size: 20px;
+}
+#quicksummarytable th{
+color: #4472C4;
+}
+
+#quicksummarytable td{
+font-weight: bold;}
